@@ -107,7 +107,7 @@ func testudpBroadcastserver(){
         print("server.started")
         while run{
             let (data,remoteip,remoteport)=server.recv(1024)
-            print("recive\(remoteip);\(remoteport)")
+            print("receive\(remoteip);\(remoteport)")
             if let d=data{
                 if let str=String(bytes: d, encoding: NSUTF8StringEncoding){
                     print(str)
